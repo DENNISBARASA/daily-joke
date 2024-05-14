@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small project one</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>A LITTLE PROJECT FOR A BIGGER SMILE</h1>
+    <p class="para2" id="para2"></p>
+   <h3>Instruction:</h3>
+   <p class="instraction">Guess any number that's in your head right now(as many times as you want), let the number not be less than zero or more than 100, otherwise, self-esteem itashuka kama bei ya cabbage.</p>
+   <p><strong>Reminder:</strong>A screenshot of the page to my WhatsApp number down there, equals one blessing to me and you.</p>
+   <div class="inputs">
+    <input type="number" class="input-field">
+    <button class="button" onclick="displayGuess()">Enter</button>
+  </div>
+  <p class="para-1" id="para-1"></p>
+  </div>
+  <div class="footer">2024&copy Dennis Barasa <br/> <strong>Phone:</strong>
+   <a href="tel:+254719852672">+254719852672</a>
+
+  <strong>WhatsApp:</strong><a href="https://wa.me/+254739769713">+25739769713</a>
+  </div>
+    <script>
+      function displayGuess(){
+         const inputField = document.querySelector('.input-field');
+         const inputFieldValue = inputField.value;
+         inputField.value = '';
+          const message = document.getElementById('para-1');
+
+          if(inputFieldValue < 0) {
+           message.innerHTML = 'Umetumwa na shetani??';
+         }else if(inputFieldValue >= 1 && inputFieldValue<=5){
+          message.innerHTML= `
+                Do you know why divers fall backwards off the boat when they are diving?
+
+                Because if they fell forward they'd still be in the boat`
+         }else if(inputFieldValue>= 5&& inputFieldValue<10){
+          message.innerHTML = `
+                            Why do flamingos stand on one leg? Because if they lifted both, they'd fall over`
+         }else if(inputFieldValue >= 10 && inputFieldValue<=15){
+          message.innerHTML=`
+                I want to die peacefully in my sleep like my grandfather did, not screaming in terror like the passengers in his car`
+
+         }else if(inputFieldValue >= 15 && inputFieldValue<=20){
+          message.innerHTML= `Yesterday I couldn’t figure out whether someone   was waving at me or the person behind me.
+
+               In other news, I lost my lifeguard job
+                              `
+              }else if(inputFieldValue >= 20 && inputFieldValue<=25){
+          message.innerHTML= `
+                       What's the difference between an owl, a piano, and a fish? You can tune a piano, but you can't tuna fish`
+              }else if(inputFieldValue >= 25 && inputFieldValue<=30){
+          message.innerHTML= `
+          
+                           A Roman walks into a bar, holds up two fingers ✌️ and says: "five beers, please.
+                        `
+              }else if(inputFieldValue >= 30 && inputFieldValue<=35){
+          message.innerHTML= `
+                    My wife comes to me and says " Honey, I don't understand the concept of human cloning." I said " That makes two of us.
+                      `
+              }else if(inputFieldValue >= 35 && inputFieldValue<=40){
+          message.innerHTML= `
+                      Did you hear about the guy who got the left side of his body amputated? He's all right now
+                        `
+              }else if(inputFieldValue >= 40 && inputFieldValue<=45){
+          message.innerHTML= `
+                    Did you hear about the scarecrow that won the Nobel Prize?
+
+                  He was outstanding in his field!
+               `
+              }else if(inputFieldValue >= 45 && inputFieldValue<=50){
+          message.innerHTML= `What's the difference between a cat and a comma?
+
+                              One is a pause at the end of a clause, but the other has claws at the end of its paws
+               `
+              }else if(inputFieldValue >= 50 && inputFieldValue<=55){
+          message.innerHTML= `What's stronger than family?
+
+                             Whatever tree Paul Walker hit
+           `
+              }else if(inputFieldValue >= 55 && inputFieldValue<=60){
+          message.innerHTML= `What's red and bad for your teeth?
+
+                             A BRICK
+                             `
+              }else if(inputFieldValue >= 60 && inputFieldValue<=65){
+          message.innerHTML= `
+                     Why did the blind man fall in the well?
+
+                      He couldn't see that well
+                `
+              }else if(inputFieldValue >= 65 && inputFieldValue<=70){
+          message.innerHTML= `
+                   I bought my blind friend a cheese grader for his birthday, he said it was the most violent book he's ever read`
+              }else if(inputFieldValue >= 70 && inputFieldValue<=75){
+          message.innerHTML= `I bought the world's worst thesaurus the other day.Not only is it terrible, it's terrible`
+              }else if(inputFieldValue >= 75 && inputFieldValue<=80){
+          message.innerHTML= `Why did the skeleton go to a movie by himself?
+
+                            Because he had no body to go with`
+              }else if(inputFieldValue >= 80&& inputFieldValue<=85){
+          message.innerHTML= `Why did the auditor cross the road? Cos he looked  in the file and that's what he did last year`
+              }else if(inputFieldValue >= 85 && inputFieldValue<=90){
+          message.innerHTML= `
+                       What did he fish say when it swan into a wall?
+
+                        "Dam"`
+              }else if(inputFieldValue >= 90 && inputFieldValue<=95){
+          message.innerHTML= `
+                        What did the left butt cheek say to the right butt cheek?
+
+                         If we stick together we can stop this shit!`
+              }else if(inputFieldValue >= 95 && inputFieldValue<=100){
+          message.innerHTML= `How do you know if someone is vegan? Don't worry - they'll tell you` 
+
+              }else if(inputFieldValue >=101 && inputFieldValue<=200){
+          message.innerHTML = `Vichwa za ng'ombe wenzako zikipelekwa kutengeneza supu hii yako ilibaki wapi?`         
+     }else if(inputFieldValue >=200 && inputFieldValue<=400){
+          message.innerHTML
+     }
+    else if(inputFieldValue >= 400 && inputFieldValue<=1000){
+          message.innerHTML = 'Lmaooo'
+    }else if(inputFieldValue > 1000 ){
+          message.innerHTML = 'Umbwaaa!'
+    }
+  }
+     
+   const message = document.querySelector('para-1');
+
+  const date1 = new Date();
+  let hour = date1.getHours();
+
+  let greetings = document.querySelector('.para2');
+  function greetThem() { 
+  if(hour>=0 && hour<12) {
+    greetings.innerHTML= 'Good morning !';
+
+  }else if(hour>12 && hour <= 13) {    
+  greetings.innerHTML= 'Good afternoon!';
+
+  }else if (hour>= 13 && hour <= 21){
+    greetings.innerHTML='Good evening!';
+
+  }else if(hour >21 && hour <0) {
+    greetings.innerHTML='Good night!'
+  }
+  }
+  greetThem();
+  </script>
+</body>
+</html>
